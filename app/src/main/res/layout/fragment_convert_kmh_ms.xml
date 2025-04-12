@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Convert_f_c">
+    tools:context=".Convert_kmh_ms">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:text="Convertisseur Fahrenheit ↔ Celsius"
+            android:text="km/h ↔ m/s"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -25,8 +25,7 @@
             android:id="@+id/et_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:hint="Entrez une température"
+            android:hint="Enter value"
             android:inputType="numberDecimal" />
 
         <RadioGroup
@@ -37,16 +36,16 @@
             android:orientation="vertical">
 
             <RadioButton
-                android:id="@+id/rb_to_celsius"
+                android:id="@+id/rb_to_ms"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vers Celsius" />
+                android:text="km/h ➡ m/s" />
 
             <RadioButton
-                android:id="@+id/rb_to_fahrenheit"
+                android:id="@+id/rb_to_kmh"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vers Fahrenheit" />
+                android:text="m/s ➡ km/h" />
         </RadioGroup>
 
         <Button
@@ -64,8 +63,5 @@
             android:gravity="center"
             android:text="Résultat : "
             android:textSize="18sp" />
-
-
     </LinearLayout>
-
 </FrameLayout>

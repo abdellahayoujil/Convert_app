@@ -12,6 +12,7 @@ import androidx.fragment.app.FragmentTransaction;
 public class MainActivity extends AppCompatActivity {
 
     private Spinner spinnerOptions;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,9 +22,10 @@ public class MainActivity extends AppCompatActivity {
         spinnerOptions = findViewById(R.id.spinner_options);
 
         String[] options = {
-                "Euro to Dhm",
-                "Celsius to Fahrenheit",
-                "cm to m"
+                "Euro ↔ Dhm",
+                "Celsius ↔ Fahrenheit",
+                "cm ↔ m",
+                "km/h ↔ m/s"
         };
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
@@ -49,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
                     case 2:
                         selectedFragment = new Convert_cm_m();
                         break;
+                    case 3:
+                        selectedFragment = new Convert_kmh_ms();
+                        break;
                 }
 
                 if (selectedFragment != null) {
@@ -60,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-                // Do nothing
+
             }
         });
     }

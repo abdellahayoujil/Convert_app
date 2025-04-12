@@ -2,6 +2,7 @@ package com.example.convert_app;
 
 
 import android.os.Bundle;
+
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -46,7 +47,7 @@ public class Convert_eur_dh extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_convert_eur_dh, container, false);
         EditText etInput = view.findViewById(R.id.et_input);
-         RadioButton rbToDh = view.findViewById(R.id.rb_to_dh);
+        RadioButton rbToDh = view.findViewById(R.id.rb_to_dh);
         RadioButton rbToEuro = view.findViewById(R.id.rb_to_euro);
         Button btnConvert = view.findViewById(R.id.btn_convert);
         TextView tvResult = view.findViewById(R.id.tv_result);
