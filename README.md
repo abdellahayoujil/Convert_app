@@ -1,12 +1,12 @@
 📱 Convert App
 A simple Android application that allows users to convert between multiple units of measurement using an intuitive interface. Built with Java and Android Fragments, this app helps users make quick and easy conversions between:
 
-🔄 Supported Conversions:
-Euro (€) ↔ Moroccan Dirham (MAD)
+🔄 Supported Conversions
 
-Celsius (°C) ↔ Fahrenheit (°F)
-
-Centimeters (cm) ↔ Meters (m)
+- 💱 Euro (€) ↔ Moroccan Dirham (MAD)  
+- 🌡️ Celsius (°C) ↔ Fahrenheit (°F)  
+- 📏 Centimeters (cm) ↔ Meters (m)  
+- 🚗 Kilometers per hour (km/h) ↔ Meters per second (m/s)
 
 🎯 Features:
 User-friendly design with radio buttons for selecting conversion direction
